@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp - Just Like Home</title>
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        .title-block {
+            align-items: center;
+        }
+
+        .title {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+
+        .info-block {
+            display: flex;
+            border-style: solid;
+            border-color: white;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 10px 5px 4px 4px rgba(0, 0, 0, 0.4);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 30px;
+            flex: 1;
+            margin-left: 25%;
+        }
+
+        .p-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: gray;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+
+        .btn-block {
+            vertical-align: middle;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 10px;
+        }
+
+        .login-btn {
+            background-color: red;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 360px;
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 45px;
+            padding-left: 45px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+
+        .signup-btn {
+            background-color: rgb(0, 140, 255);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 360px;
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 35px;
+            padding-left: 35px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .login-btn {
+            font-size: 12px; /* Adjusted font size for smaller screens */
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 35px;
+            padding-left: 35px;
+            }
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 1200px) {
+        .login-btn {
+            font-size: 20px; /* Adjusted font size for larger screens */
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        }
+
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .signup-btn {
+            font-size: 12px; /* Adjusted font size for smaller screens */
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 35px;
+            padding-left: 35px;
+            }
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 1200px) {
+        .signup-btn {
+            font-size: 20px; /* Adjusted font size for larger screens */
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+        }
+
+        .txt-boxes {
+            border-style: solid;
+            border-color: black;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+            flex: 1;
+            height: 50px;
+            margin-bottom: 20px;
+            border-width: 3px;
+        }
+
+        .login-btn:hover {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+
+        .signup-btn:hover {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .email-block {
+            margin-top: 10px;
+            margin-bottom: 1px;
+        }
+
+        .password-block {
+            margin-top: 10px;
+            margin-bottom: 1px;
+        }
+
+        .signup-btn:hover {
+            background-color: rgb(0, 183, 255);
+        }
+
+        .login-btn:hover {
+            background-color: rgb(252, 86, 86);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-page">
+        <div>
+            <p class="title">SIGN IN</p>
+            <div class="info-block">
+                <p class="p-text">Email:</p>
+                <input class="txt-boxes" type="text" placeholder="Enter your email">
+                <p class="p-text">Password:</p>
+                <input class="txt-boxes" type="password" placeholder="Enter your password">
+            </div>
+            <div class="btn-block">
+                <button class="login-btn">Enter</button>
+                <button class="signup-btn"><a href="signup.html">Sign Up</a></button>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
